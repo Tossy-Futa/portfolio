@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", 'ＭＳ Ｐゴシック', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+}
+
+.wrapper{
+  background-color: #f3f3f3;
+  position: relative;
+  padding-bottom: 120px;
+  box-sizing: border-box
+}
+
+a {
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(119, 136, 163, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 15px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: auto 100%;
+  height: 400px;
+  padding: 0 15px;
+  margin: 65px auto 0px;
+}
+
+.swiper-slide img {
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+
+section{
+  padding: 80px 10px 10px 0px;
+}
+
+.section-title-block {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-title{
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.profile-wrapper {
+  margin: 0 auto;
+  display: flex;
+}
+
+.profile-wrapper .profile-text{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.profile-image img{
+  width: 70%;
+  height: auto;
+}
+
+.profile-subtitle{
+  font-size: 26px;
+  margin: 0 auto;
+}
+
+td {
+  vertical-align: top;
+  padding: 30px
+}
+
+.skill-subtitle{
+  padding: 5px;
+  font-size: 24px;
+}
+
+.skill-icon img{
+  width: auto;
+  height: 200px;
+}
+
+.App-block-wrapper{
+  overflow: scroll;
+}
+
+.App-block{
+  display: block;
+  clear: both;
+  content: "";
+  padding: 50px 0 ;
+}
+
+.App-block-title{
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.App-block-Explan{
+  width: 40%;
+  margin: 0 auto;
+  float: left;
+}
+
+.App-block-icon{
+  width: 50%;
+  margin: 0 auto;
+  float: right;
+}
+
+.code{
+  text-align: center;
+}
+
+
+footer {
+  padding: 30px;
+  width: 100%;
+  height: 100px;
+  background-color: #dcdcdc;
+  text-align: center;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-menu li{
+  display: inline;
+
+}
+
+/* タブレットのレイアウト */
+@media all and (max-width: 1000px) {
+  section {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+/* スマホのレイアウト */
+@media all and (max-width: 670px) {
+  section {
+    width: 100%;
+  }
+
+}
