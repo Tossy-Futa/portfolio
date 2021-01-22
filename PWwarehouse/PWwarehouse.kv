@@ -1,0 +1,22 @@
+PWWarehouseRoot:
+
+<PWWarehouseRoot>:
+    #縦方向に箱が複数作られる造りにする
+    BoxLayout:
+        orientation : "vertical"
+        #リスト＝CustomSpinner
+        CustomSpinner:
+            id: list1
+            #初期値が「PlatForm」
+            text: 'PlatForm'
+            #プラットフォーム名を次々に入れていく
+            values:'AAA', 'BBB', 'CCC'
+            pos_hint: {'center_x': .5, 'center_y': .5}
+        #このボタンを押すと設定したパスワードがクリップボードに入る
+        Button:
+            id: button1
+            #ボタンに表示される名前はこれ↓
+            text: 'PWPaste'
+            #押すとPWwarehouse.py上に書いたこの機能（root.copy()）が発動↓
+            on_release:root.Copy()
+            pos_hint: {'center_x': .5, 'center_y': .10}
