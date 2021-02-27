@@ -6,7 +6,6 @@
     <link href="style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" rel="stylesheet" >
     <script src="https://kit.fontawesome.com/6a85367f33.js" crossorigin="anonymous"></script>
     <title>PortFolio</title>
@@ -32,9 +31,7 @@
           <div class="swiper-slide"><img src="2.jpg" alt=""></div>
           <div class="swiper-slide"><img src="3.jpg" alt=""></div>
         </div>
-
         <div class="swiper-pagination"></div>
-
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
@@ -190,6 +187,28 @@
               </div>
             </div>
           </section>
+
+          <div class="mailform">
+            <h3>お問い合わせはこちら</h3>
+            <form action="contactform.php" method="post">
+              <div class="form-group">
+                <label for="name">お名前</label><br>
+                <input type="text" required id="name" name="name" class="form-control"><br>
+              </div>
+              <div class="form-group">
+                <label for="mail">メールアドレス</label></br>
+                <input type="email" required id="mail" name="mail" class="form-control"><br>
+              </div>
+              <div class="form-group">
+                <label for="contents">内容</label><br>
+                <textarea name="contents" required id="contents" cols="40" rows="8" placeholder="お問い合わせ内容をご記入ください" class="form-control"></textarea><br>
+              </div>
+              <div class="form-button">
+                <button type="submit" class="btn btn-primary">送信</button>
+                <button type="reset" class="btn btn-primary">リセット</button>
+              </div>
+            </form>
+          </div>
 
         </div>
 
