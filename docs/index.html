@@ -188,27 +188,32 @@
             </div>
           </section>
 
-          <div class="mailform">
-            <h3>お問い合わせはこちら</h3>
-            <form action="contactform.php" method="post">
-              <div class="form-group">
-                <label for="name">お名前</label><br>
-                <input type="text" required id="name" name="name" class="form-control"><br>
-              </div>
-              <div class="form-group">
-                <label for="mail">メールアドレス</label></br>
-                <input type="email" required id="mail" name="mail" class="form-control"><br>
-              </div>
-              <div class="form-group">
-                <label for="contents">内容</label><br>
-                <textarea name="contents" required id="contents" cols="40" rows="8" placeholder="お問い合わせ内容をご記入ください" class="form-control"></textarea><br>
-              </div>
-              <div class="form-button">
-                <button type="submit" class="btn btn-primary">送信</button>
-                <button type="reset" class="btn btn-primary">リセット</button>
-              </div>
-            </form>
-          </div>
+          <section class="section" id="App">
+            <div class="section-title-block">
+              <h2 class="section-title"><span class="fa fa-envelope-o" aria-hidden="true"></span>Mail</h2>
+            </div>
+            <div class="mail-form">
+              <h3>お問い合わせはこちら</h3>
+              <form action="contactform.php" method="post">
+                <div class="form-group">
+                  <label for="name">お名前</label><br>
+                  <input type="text" required id="name" name="name" class="form-control"><br>
+                </div>
+                <div class="form-group">
+                  <label for="mail">メールアドレス</label></br>
+                  <input type="email" required id="mail" name="mail" class="form-control"><br>
+                </div>
+                <div class="form-group">
+                  <label for="contents">内容</label><br>
+                  <textarea name="contents" required id="contents" cols="40" rows="8" placeholder="お問い合わせ内容をご記入ください" class="form-control"></textarea><br>
+                </div>
+                <div class="form-button">
+                  <button type="submit" class="btn btn-primary">送信</button>
+                  <button type="reset" class="btn btn-primary">リセット</button>
+                </div>
+              </form>
+            </div>
+          </section>
 
         </div>
 
