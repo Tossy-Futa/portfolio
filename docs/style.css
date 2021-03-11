@@ -64,6 +64,32 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.menu-button {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.menuR {
+  z-index: 100;
+  top: 65px;
+  height: 100%;
+  right: -200px;
+  width: 200px;
+  background-color: rgba(119, 136, 163, 0.6);
+  color: #ffffff;
+  font-size: 15px;
+  position: fixed;
+  padding: 0 40px 0 0;
+}
+
+.menuR a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .swiper-container {
   position: relative;
   margin-left: auto;
@@ -161,6 +187,10 @@ td {
   text-align: center;
 }
 
+.top-scroll{
+  text-decoration: none;
+  font-size:20px;
+}
 
 footer {
   padding: 30px;
@@ -200,6 +230,14 @@ footer li{
 @media all and (max-width: 670px) {
   section {
     width: 100%;
+  }
+
+  .header-right {
+  display: none;
+  }
+
+  .menu-button {
+  display: block;
   }
 
 }
