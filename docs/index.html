@@ -22,6 +22,14 @@
             <a href="#Skill"><span class="fas fa-cubes"></span>Skill</a>
             <a href="#App"><span class="fas fa-cogs"></span>App</a>
           </div>
+          <a href="#menuR" id="menu-button" class="menu-button"><span class="fa fa-bars" aria-hidden="true"></span></a>
+          <div id="menuR" class="menuR off">
+            <ul>
+              <li><a href="#Pro-file">Profile</a></li>
+              <li><a href="#Skill">Skill</a></li>
+              <li><a href="#App">App</a></li>
+            </ul>
+          </div>
         </div>
       </header>
 
@@ -52,8 +60,7 @@
                 <p>
                   <ul>
                     <li>はじめまして。Tossy-Futaと申します。</li>
-                    <li>2021年1月現在、公務員として働いております。</li>
-                    <li>2018年よりYouTube（チャンネル名は伏せます…）にて活動を始めます。<br>→「作ること」の楽しさに目覚めました。</li>
+                    <li>2021年3月現在、公務員として働いております。</li>
                     <li>2019年12月より、活動の幅を広げるためプログラミングを学び始めます。</li>
                     <li><a href="#App">「こんなのがあったら良いな」という妄想から、アプリを何個か作成しました。</a><br>→アプリを妻に使ってもらったところ、思いのほか好評でした。</li>
                     <li>私はプログラミングの楽しさと、喜んで使って貰える嬉しさを知ります。</li>
@@ -108,8 +115,8 @@
             <p class="text-contents">
               コーディングに関しては、以下の通り勉強中です。
               <ul>
-                <li>HTML/CSSを少し書けます。</li>
-                <li>Python（Tkinter、Kivy、WEBスクレイピング、機械学習）を少し勉強しました。</li>
+                <li>HTML/CSS/php(MAMP,phpMyAdmin)/<br>javascript(jquery)を少し書けます。</li>
+                <li>Python（Tkinter、Kivy、WEBスクレイピング、機械学習）も勉強しました。</li>
               </ul>
             </p>
           </td>
@@ -122,6 +129,26 @@
               <h2 class="section-title"><span class="fas fa-cogs"></span>App</h2>
             </div>
             <div class="App-block-wrapper">
+              <div class="App-block">
+                <h3 class="App-block-title">【料理のレシピを集めて保管するサイト】</h3>
+                <div class="App-block-Explan">
+                  <ol>
+                    <li>PHPでレシピの登録フォームを作成</li>
+                    <li>レシピは「炒める」、「煮る」、「蒸す」、「その他」でジャンル分けする</li>
+                    <li>ジャンル別にレシピの一覧も表示される</li>
+                    <li>レシピの一覧から料理名をクリックするとレシピが出てくる</li>
+                  </ol>
+                  <p>
+                    PHP(MAMP,phpMyAdmin),MySQL<br>
+                    localhostの環境で閲覧。<br>
+                    個人的に好きなレシピを集めたサイトがほしいと思い作成しました。
+                  </p>
+                  <a href="https://github.com/Tossy-Futa/portfolio/tree/main/file-random" class="code">コード（Git Hub)</a>
+                </div>
+                <div class="App-block-icon">
+                  <img src="App4.gif" alt="">
+                </div>
+              </div>
               <div class="App-block">
                 <h3 class="App-block-title">【ファイルランダム選択くん（仮）】</h3>
                 <div class="App-block-Explan">
@@ -157,7 +184,7 @@
                     一回一回入力するのは面倒くさい。それに噂によると、パスワード入力時にパスワードを盗み取られる可能性もあるとか。<br>
                     そんな時にこれを使うと、貼り付けを行う（Ctrl + V)だけでパスワードが入力されます。
                   </p>
-                    <a href="https://github.com/Tossy-Futa/portfolio/tree/main/PWwarehouse" class="code">コード（Git Hub)</a>
+                    <a href="" class="code">コード（Git Hub)</a>
                   </p>
                 </div>
                 <div class="App-block-icon">
@@ -215,6 +242,10 @@
             </div>
           </section>
 
+          <section>
+            <button class="top-scroll">TOPへ（スクロールで戻ります）</button>
+          </section>
+
         </div>
 
       </div>
@@ -232,7 +263,7 @@
         </p>
       </footer>
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <script type="text/javascript" src="script.js"></script>
@@ -252,6 +283,22 @@
             el: '.swiper-scrollbar',
           },
         })
+      </script>
+      <script>
+        $("#menu-button").on("click", function(){
+        if($("#menuR").hasClass("off")){
+          $("#menuR").removeClass("off");
+          $("#menuR").animate({"marginRight":"200px"},300).addClass("on");
+        }else{
+          $("#menuR").removeClass("on");
+          $("#menuR").animate({"marginRight":"-200px"},300).addClass("off");
+          }
+        });
+      </script>
+      <script>
+      $(".top-scroll").on("click",function() {
+        $("html").animate({scrollTop:0},1000);
+      })
       </script>
   </body>
 </html>
